@@ -1,7 +1,14 @@
 <template>
-    <BaseCard>
-        我是全局自动注册的基础组件,组件命名前缀为Base，组件文件需放置components/base文件夹下
-    </BaseCard>
+    <div>
+        <h2>组件示例</h2>
+        <div>
+            <router-link to="/html5Drag" style="margin-right: 20px">html5拖拽</router-link>
+            <router-link to="/jsDrag">js拖拽</router-link>
+        </div>
+        <div>
+            <router-view></router-view>
+        </div>
+    </div>
 </template>
 <script>
     export default {

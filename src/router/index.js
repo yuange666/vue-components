@@ -12,7 +12,20 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: Home
+    component: Home,
+    redirect: '/html5Drag',
+    children:[
+      {
+        path:'/html5Drag',
+        name:'/html5Drag',
+        component:()=>import('../components/Html5Drag.vue')
+      },
+      {
+        path:'/jsDrag',
+        name:'/jsDrag',
+        component:()=>import('../components/JsDrag.vue')
+      }
+    ]
   },
   {
     path: '/about',
