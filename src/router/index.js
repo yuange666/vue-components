@@ -24,6 +24,11 @@ const routes = [
         path:'/jsDrag',
         name:'/jsDrag',
         component:()=>import('../components/JsDrag.vue')
+      },
+      {
+        path:'/vueQuillEditor',
+        name:'vueQuillEditor',
+        component:()=>import('../components/VueQuillEditor.vue')
       }
     ]
   },

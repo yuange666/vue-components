@@ -7,7 +7,12 @@ import * as util from './util/util';
 Vue.prototype.$util=util;
 Vue.config.productionTip = false;
 import Antd from 'ant-design-vue';
+import VueQuillEditor from 'vue-quill-editor';
+import 'quill/dist/quill.core.css'
+import 'quill/dist/quill.snow.css'
+import 'quill/dist/quill.bubble.css'
 Vue.use(Antd);
+Vue.use(VueQuillEditor, /* { default global options } */)
 const requireComponent = require.context(
     // Look for files in the current directory
     './components/base',

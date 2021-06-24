@@ -240,7 +240,7 @@ export default {
     text-align: center;
 }
 .btn{
-    position: absolute;
+
 }
 .conflict {
     border: 1px solid #f00;
